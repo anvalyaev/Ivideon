@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>LampView.qml</file>
+        <file>PowerButton.qml</file>
+        <file>images/power.svg</file>
+        <file>images/lamp.svg</file>
+        <file>ConnectDialog.qml</file>
+        <file>images/background.png</file>
+    </qresource>
+</RCC>
