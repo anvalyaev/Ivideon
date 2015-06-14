@@ -36,7 +36,6 @@ void Dispatcher::parseSocketState(QAbstractSocket::SocketState socketState)
 
 void Dispatcher::acceptConnection()
 {
-    qDebug()<<"void Dispatcher::acceptConnection()";
     QTlvSocket* qTlvSocket = server->nextPendingConnection();
     sockets.append(qTlvSocket);
     connect(qTlvSocket, SIGNAL(stateChanged(QAbstractSocket::SocketState)), this,

@@ -20,6 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
     vbox->addWidget(changeColorButton);
 
     this->setLayout(vbox);
+
+    this->setMinimumWidth(200);
 }
 
 MainWindow::~MainWindow()

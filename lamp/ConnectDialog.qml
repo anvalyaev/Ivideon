@@ -6,6 +6,8 @@ import QtQuick.Layouts 1.1
 Dialog {
     id: dialog
     title: "Connect dialog"
+    width: 300
+    height: 150
     property string hostname: host.text
     property int port: port.value
 

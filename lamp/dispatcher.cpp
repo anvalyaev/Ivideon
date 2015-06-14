@@ -48,6 +48,7 @@ void Dispatcher::connectToHost(const QString &hostName, int port)
 
 void Dispatcher::parseSocketState(QAbstractSocket::SocketState socketState)
 {
+    qDebug()<<socketState;
     if(socketState == QAbstractSocket::UnconnectedState) {
         QVariant returnedValue;
         QMetaObject::invokeMethod(viewer, "showConnectDialog",

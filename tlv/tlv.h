@@ -5,11 +5,13 @@
 #include <QTcpServer>
 #include "littlebigendiannames.h"
 
+#pragma pack (push, 1)
 struct InfoPack
 {
     u8 type;
     u16be length;
 };
+#pragma pack (pop)
 
 enum struct Command : u8
 {
