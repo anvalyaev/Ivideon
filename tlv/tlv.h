@@ -9,7 +9,8 @@
 struct InfoPack
 {
     u8 type;
-    u16be length;
+    u16be length; /*Ранее не использовал такой подход,
+    но выглядит более красиво чем htons/ntohs или QtEndian*/
 };
 #pragma pack (pop)
 
