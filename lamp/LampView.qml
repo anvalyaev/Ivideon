@@ -4,7 +4,7 @@ import QtGraphicalEffects 1.0
 Item {
     id: root
 
-    property color color
+    property color color: "#C8C8C8"
     property int radiusOfRays
     property int numberOfRays: 48
     property int animationDuration: 500
